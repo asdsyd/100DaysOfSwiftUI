@@ -15,7 +15,7 @@ Contains all my solutions and projects of [100DaysOfSwiftUI](https://www.hacking
 <br>
 <br>
 
-| &emsp;&nbsp;Day&nbsp;&emsp; | Projects/Topics                                                                                                                                     | Demo&nbsp;link                                             | Status | Screenshots | 
+| &emsp;&nbsp;&nbsp;Day&nbsp;&nbsp;&emsp; | Projects/Topics                                                                                                                                     | Demo&nbsp;link                                             | Status | Screenshots | 
 |:---------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------:|:------:|:-----------:| 
 | Day:16-18 | [Project-1](/P01-WeSplit-D18) : **WeSplit** <br/><sub> Form, Section, NavigationView, @State, TextField, Picker, ForEach                                              | [𝕏](https://x.com/asdsydd/status/1722579102727823693?s=20) |   ✅   |             | 
 | Day-19    | [Challenge-1](/C01-Convertase-D19) : **Convertase** <br><sub> Unit Conversion App </sub>                                                                              | [𝕏](https://x.com/asdsydd/status/1724490399442723103?s=20) |   ✅   |             | 
