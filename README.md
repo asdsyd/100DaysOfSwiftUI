@@ -13,9 +13,9 @@ Contains all my solutions and projects of [100DaysOfSwiftUI](https://www.hacking
 | Milestone Projects  |  3 / 6  |   50%      |
 
 
-| Day       | Projects/Topics                                                                                                                                                      | Demo-link                                                  | Status | Screenshots |
-|:----------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------|:--------:|:-----------:|
-| Day:16-18 | [Project-1](/P01-WeSplit-D18) : **WeSplit** <br/><sub> Form, Section, NavigationView, @State, TextField, Picker, ForEach                                             | [𝕏](https://x.com/asdsydd/status/1722579102727823693?s=20) | ✅ |
+| Day               | Projects/Topics                                                                                                                                                      | Demo-link                                                  | Status | Screenshots |
+|:------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------|:--------:|:-----------:|
+| Day:16-18       | [Project-1](/P01-WeSplit-D18) : **WeSplit** <br/><sub> Form, Section, NavigationView, @State, TextField, Picker, ForEach                                             | [𝕏](https://x.com/asdsydd/status/1722579102727823693?s=20) | ✅ |
 | Day-19    | [Challenge-1](/C01-Convertase-D19) : **Convertase** <br><sub> Unit Conversion App </sub> | [𝕏](https://x.com/asdsydd/status/1724490399442723103?s=20) | ✅ |
 | Day:20-22 | [Project-2](/P02-GuessTheFlag-D22) : **Guess the Flag** <br><sub> Stack, Image, Gradient, Frames, Buttons, Alerts, Design </sub>          | [𝕏](https://x.com/asdsydd/status/1724876595079655644?s=20)   | ✅        |
 | Day:23-24 | [Project-3](/P03-ViewsAndModifiers-D24) : **Views and Modifiers** <br><sub> Views, modifiers, composition, containers </sub> | [𝕏](https://x.com/asdsydd/status/1729543041076388190?s=20)   | ✅        |
