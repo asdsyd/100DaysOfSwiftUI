@@ -4,6 +4,7 @@ Contains all my solutions and projects of [100DaysOfSwiftUI](https://www.hacking
 
 [Crossword solution](/15-wordsearch.pdf)
 
+inserting into things 
 
 | Day    | Project                                   | 𝕏 Demo-link                                                  | Status      |
 | :----: | :-------------------------------------:   | :----------------------------------------------------------: | :---------: |

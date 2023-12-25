@@ -1,1 +1,4 @@
 /Presentation
+
+#ignore the DS Store file
+**/.DS_Store
