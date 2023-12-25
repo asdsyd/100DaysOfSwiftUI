@@ -12,6 +12,9 @@ Contains all my solutions and projects of [100DaysOfSwiftUI](https://www.hacking
 | Challenges         | 7 / 57 |   12.2%    |
 | Milestone Projects | 3 / 6  |    50%     |
 
+<br>
+<br>
+
 | Day&emsp;&emsp;&emsp;&emsp; | Projects/Topics                                                                                                                                                       | Demo-link                                                  | Status | Screenshots |
 |:--------| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |:---------------------------------------------------------|:----:| :---------: |
 | Day:16-18 | [Project-1](/P01-WeSplit-D18) : **WeSplit** <br/><sub> Form, Section, NavigationView, @State, TextField, Picker, ForEach                                              | [𝕏](https://x.com/asdsydd/status/1722579102727823693?s=20) |   ✅   |
