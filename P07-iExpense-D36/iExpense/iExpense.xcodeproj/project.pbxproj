@@ -34,6 +34,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E962C4F2B445E4700A40A5F /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				4E962C502B445E4A00A40A5F /* New Group */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		4E962C502B445E4A00A40A5F /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		4EF971982B2B6FA1004DCB99 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +71,7 @@
 			children = (
 				4EF971A42B2B6FA1004DCB99 /* iExpenseApp.swift */,
 				4EF971A62B2B6FA1004DCB99 /* ContentView.swift */,
+				4E962C4F2B445E4700A40A5F /* New Group */,
 				4EF971A82B2B6FA3004DCB99 /* Assets.xcassets */,
 				4EF971AA2B2B6FA3004DCB99 /* Preview Content */,
 			);

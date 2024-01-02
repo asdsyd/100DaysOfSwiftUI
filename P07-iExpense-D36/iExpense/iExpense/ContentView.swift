@@ -14,6 +14,28 @@ struct ExpenseItem: Identifiable, Codable {
     let amount: Double
 }
 
+struct ExpenseRow: View {
+    var item: ExpenseItem
+    @Binding var expenses: Expenses
+
+    var body: some View {
+        HStack {
+            VStack(alignment: .leading) {
+                Text(item.name)
+                    .font(.headline)
+                Text(item.type)
+            }
+
+            Spacer()
+
+            Text(item.amount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
+                .foregroundColor(item.amount < 100 ? .green : item.amount < 1000 ? .blue : .red)
+        }
+    }
+}
+
+
+
 @Observable
 class Expenses {
     var items = [ExpenseItem]() {
@@ -68,6 +90,8 @@ struct ContentView: View {
                         removeItems(at: IndexSet, type: "Business")
                     }
                 }
+                
+                
 //                ForEach(expenses.items) { item in
 //                    HStack {
 //                        VStack(alignment: .leading) {
@@ -98,12 +122,22 @@ struct ContentView: View {
         }
     }
     
+//    func removeItems(at offsets: IndexSet, type: String ) {
+//        let filteredIndices = expenses.items.indices.filter { expenses.items[$0].type == type }
+//        let indicesToRemove = offsets.map { filteredIndices[$0] }
+//        expenses.items.remove(atOffsets: indicesToRemove)
+////        expenses.items.remove(atOffsets: offsets)
+//    }
     func removeItems(at offsets: IndexSet, type: String) {
-        let filteredItems = expenses.items.filter { $0.type == type }
-        let indicesToRemove = offsets.map { filteredItems.index($0) }
-        expenses.items.remove(atOffsets: indicesToRemove)
-//        expenses.items.remove(atOffsets: offsets)
+        let itemsToRemove = expenses.items.enumerated().filter { $0.element.type == type }
+        let indicesToRemove = offsets.map { itemsToRemove[$0].offset }
+
+        for index in indicesToRemove.sorted(by: >) {
+            expenses.items.remove(at: index)
+        }
     }
+
+
 }
 
 #Preview {
