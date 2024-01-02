@@ -39,6 +39,8 @@ struct ContentView: View {
     
     @State private var showingAddExpense = false
     
+    @State private var selectedFilter = ["Personal", "Business", "All"]
+    
     
     var body: some View {
         NavigationStack {
@@ -55,9 +57,8 @@ struct ContentView: View {
                         Spacer()
                         
                         Text(item.amount, format:
-                                .currency(code: Locale.current
-                                    .currency?
-                                    .identifier?? "INR"))
+                                .currency(code: Locale.current.currency?.identifier ?? "USD"))
+                        .foregroundColor(item.amount < 100 ? .green : item.amount < 1000 ? .blue : .red)
                     }
                 }
                 .onDelete(perform: removeItems)
