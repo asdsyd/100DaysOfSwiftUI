@@ -28,7 +28,7 @@ struct ExpenseRow: View {
 
             Spacer()
 
-            Text(item.amount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
+            Text(item.amount, format: .currency (code: Locale.current.currency?.identifier ?? "USD"))
                 .foregroundColor(item.amount < 100 ? .green : item.amount < 1000 ? .blue : .red)
         }
     }
