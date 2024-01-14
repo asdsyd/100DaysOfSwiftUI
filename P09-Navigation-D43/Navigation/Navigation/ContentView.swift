@@ -7,12 +7,6 @@
 
 import SwiftUI
 
-struct Student: Hashable
-{
-    var id = UUID()
-    var name: String
-    var age: Int
-}
 
 struct DetailView: View
 {
@@ -20,13 +14,8 @@ struct DetailView: View
     
     var body: some View 
     {
-        Text("Detail View \(number)")
-    }
-    
-    init(number: Int) 
-    {
-        self.number = number
-        print("Creating detail view \(number)")
+        NavigationLink("Go to random number", value: Int.random(in: 1...1000))
+            .navigationTitle("Number: \(number)")
     }
 }
 
