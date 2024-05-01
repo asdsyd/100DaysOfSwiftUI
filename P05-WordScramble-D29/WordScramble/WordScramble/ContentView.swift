@@ -33,6 +33,8 @@ struct ContentView: View {
                             Text(word)
                             Image(systemName: "\(word.count).circle")
                         }
+                        .accessibilityElement()
+                        .accessibilityLabel("\(word), \(word.count).circle")
                     }
                 }
             }
