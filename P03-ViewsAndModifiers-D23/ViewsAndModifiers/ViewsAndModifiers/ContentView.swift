@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// P3-C3: Create a custom ViewModifier (and accompanying View extension) that makes a view have a large, blue font suitable for prominent titles in a view.
 struct TitleStyle: ViewModifier {
     func body(content: Content) -> some View {
         content

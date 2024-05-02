@@ -33,6 +33,7 @@ struct MissionView: View
                     width * 0.6
                 }
                 
+                // P8-C1: Add the launch date to MissionView, below the mission badge. You might choose to format this differently given that more space is available, but it’s down to you.
                 Text("Launch Date: \(mission.formattedLaunchDate)")
                                 
                 VStack(alignment: .leading)
@@ -49,7 +50,7 @@ struct MissionView: View
                     
                     Text(mission.description)
                     
-                    
+                    // P8-C2: Extract one or two pieces of view code into their own new SwiftUI views – the horizontal scroll view in MissionView is a great candidate, but if you followed my styling then you could also move the Rectangle dividers out too.
                     DividerView()
                     
 //                    NavigationStack {

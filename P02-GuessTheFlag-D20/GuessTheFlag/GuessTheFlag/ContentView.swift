@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// P3-C2: Go back to project 2 and replace the Image view used for flags with a new FlagImage() view that renders one flag image using the specific set of modifiers we had.
 struct FlagImage: View {
 
     let name: String
@@ -29,9 +30,9 @@ struct ContentView: View {
     @State private var showingScore = false
     @State private var scoreTitle = ""
     
+    // P2-C1: Add an @State property to store the user’s score, modify it when they get an answer right or wrong, then display it in the alert and in the score label.
     @State private var userScore = 0
     @State private var questionsDisplayed = 0
-//    @State private var restartTitle = ""
     
     @State private var animationAmount = 360.0
     @State private var selectedFlag = -1
@@ -84,8 +85,11 @@ struct ContentView: View {
                                 .clipShape(Capsule())
                                 .shadow(radius: 5)
                                 .padding(10)
+                            // P6-C2: Make the other two buttons fade out to 25% opacity.
                                 .opacity(selectedFlag == -1 || selectedFlag == number ? 1 : 0.25 )
+                            // P6-C3: Add a third effect of your choosing to the two flags the user didn’t choose – maybe make them scale down? Or flip in a different direction? Experiment!
                                 .scaleEffect(selectedFlag == -1 || selectedFlag == number ? 1 : 0.5)
+                            // P6-C1: When you tap a flag, make it spin around 360 degrees on the Y axis.
                                 .rotation3DEffect(
                                     .degrees(selectedFlag == correctAnswer ? animationAmount : 0.0),
                                     axis: (x: 0, y: 1, z: 0)
@@ -137,11 +141,14 @@ struct ContentView: View {
                     userScore += 100
                     
                 } else {
+                    // P2-C2: When someone chooses the wrong flag, tell them their mistake in your alert message – something like “Wrong! That’s the flag of France,” for example.
                     scoreTitle = "Wrong! That's the flag of \(countries[number])"
                     userScore -= 20
                     
                 }
                 showingScore = true
+                
+                // P2-C3: Make the game show only 8 questions, at which point they see a final alert judging their score and can restart the game.
                 if questionsDisplayed == 8 {
                     showingScore = true
                 }

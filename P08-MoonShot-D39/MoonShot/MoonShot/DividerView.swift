@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// P8-C2: Extract one or two pieces of view code into their own new SwiftUI views – the horizontal scroll view in MissionView is a great candidate, but if you followed my styling then you could also move the Rectangle dividers out too.
 struct DividerView: View {
     //Common Properties with default values for creating a rectangle divider which is reusable
     var height: CGFloat = 3

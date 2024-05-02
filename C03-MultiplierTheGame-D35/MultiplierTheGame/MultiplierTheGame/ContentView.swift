@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+// Day-35 | Milestone: Projects 4-6
+// Challenge Project - 3: Multiplier The Game
+// Problem statement: https://www.hackingwithswift.com/guide/ios-swiftui/3/3/challenge
 struct ContentView: View {
     @State private var num1 = Int()
     @State private var num2 = Int()

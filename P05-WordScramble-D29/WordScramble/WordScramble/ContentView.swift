@@ -44,8 +44,17 @@ struct ContentView: View {
             }
             .onAppear(perform:startGame)
             .alert(errorTitle, isPresented: $showingError) { } message: { Text(errorMessage) }
+            // P5-C2: Add a toolbar button that calls startGame(), so users can restart with a new word whenever they want to.
+            .toolbar {
+                ToolbarItem(placement: .bottomBar) {
+                    Button("Start a new Game") {
+                        startGame()
+                    }
+                }
+            }
             
             Section {
+                // P5-C3: Put a text view somewhere so you can track and show the player’s score for a given root word. How you calculate score is down to you, but something involving number of words and their letter count would be reasonable.d
                 Text("Current Score: \(score)")
                     .foregroundStyle(.green)
                     .font(.title)
@@ -57,13 +66,7 @@ struct ContentView: View {
             Spacer()
             
         }
-        .toolbar {
-            ToolbarItem(placement: .bottomBar) {
-                Button("Start a new Game") {
-                    startGame()
-                }
-            }
-        }
+        
     }
     
     func addNewWord() {
@@ -71,6 +74,7 @@ struct ContentView: View {
         
         guard answer.count > 0 else { return }
         
+        // P5-C1: Disallow answers that are shorter than three letters or are just our start word.
         guard isNotShort(word: answer) else {
             wordError(title: "word too short", message: "You should form a word with atleast 3 letters")
             return

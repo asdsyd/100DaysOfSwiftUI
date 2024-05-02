@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+// Day-25 | Milestone: Projects 1-3
+// Challenge Project - 2: ScissorYourBrain
+// Problem statement: https://www.hackingwithswift.com/guide/ios-swiftui/2/3/challenge
 struct ContentView: View {
     let options = ["👊", "🤚", "✌️"]
     
