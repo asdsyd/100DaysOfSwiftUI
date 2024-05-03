@@ -35,6 +35,9 @@ struct DetailView: View {
                 .font(.title)
                 .foregroundStyle(.secondary)
             
+            // P11-C3: Add a new “date” attribute to the Book class, assigning Date.now to it so it gets the current date and time, then format that nicely somewhere in DetailView.
+            Text(book.date.formatted())
+            
             Text(book.review)
                 .padding()
             
@@ -67,7 +70,7 @@ struct DetailView: View {
     do {
         let config = ModelConfiguration(isStoredInMemoryOnly: true)
         let container = try ModelContainer(for: Book.self, configurations: config)
-        let example = Book(title: "Test Book", author: "Test author", genre: "Fantasy", review: "This is a great book", rating: 4)
+        let example = Book(title: "Test Book", author: "Test author", genre: "Fantasy", review: "This is a great book", rating: 4, date: Date.now)
         
         return DetailView(book: example)
             .modelContainer(container)

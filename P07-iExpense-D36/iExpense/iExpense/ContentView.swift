@@ -25,6 +25,8 @@ struct ExpenseRow: View {
                     .font(.headline)
                 Text(item.type)
             }
+            // P15-C2: Fix the list rows in iExpense so they read out the name and value in one single VoiceOver label, and their type in a hint.
+            .accessibilityLabel(item.name + item.type)
 
             Spacer()
 
@@ -64,6 +66,9 @@ struct ContentView: View {
     @State private var showingAddExpense = false
     
     @State private var selectedFilter = ["Personal", "Business", "All"]
+    
+    // P9-C2: Try changing project 7 so that it lets users edit their issue name in the navigation title rather than a separate textfield. Which option do you prefer?
+    @State private var title = "iExpense"
     
     
     var body: some View {
@@ -113,17 +118,24 @@ struct ContentView: View {
 //                }
 //                .onDelete(perform: removeItems)
             }
-            .navigationTitle("iExpense")
+            .navigationTitle($title)
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                Button("Add Expense", systemImage: "plus") {
-                    showingAddExpense = true
+                // P9-C1: Change project 7 (iExpense) so that it uses NavigationLink for adding new expenses rather than a sheet. (Tip: The dismiss() code works great here, but you might want to add the navigationBarBackButtonHidden() modifier so they have to explicitly choose Cancel.)
+                NavigationLink(destination: AddView(expenses: expenses)) {
+                    Image(systemName: "plus")
                 }
+//                Button("Add Expense", systemImage: "plus") {
+//                    showingAddExpense = true
+//                }
             }
-            .sheet(isPresented: $showingAddExpense, content: {
-                AddView(expenses: expenses)
-            })
+//            .sheet(isPresented: $showingAddExpense, content: {
+//                AddView(expenses: expenses)
+//            })
         }
     }
+    
+    
     
 //    func removeItems(at offsets: IndexSet, type: String ) {
 //        let filteredIndices = expenses.items.indices.filter { expenses.items[$0].type == type }
@@ -131,6 +143,8 @@ struct ContentView: View {
 //        expenses.items.remove(atOffsets: indicesToRemove)
 ////        expenses.items.remove(atOffsets: offsets)
 //    }
+    
+    
     func removeItems(at offsets: IndexSet, type: String) {
         let itemsToRemove = expenses.items.enumerated().filter { $0.element.type == type }
         let indicesToRemove = offsets.map { itemsToRemove[$0].offset }

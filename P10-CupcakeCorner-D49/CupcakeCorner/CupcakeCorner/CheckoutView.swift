@@ -12,6 +12,9 @@ struct CheckoutView: View {
     
     @State private var confirmationMessage = ""
     @State private var showingConfirmation = false
+    // P10-C2: If our call to placeOrder() fails – for example if there is no internet connection – show an informative alert for the user. To test this, try commenting out the request.httpMethod = "POST" line in your code, which should force the request to fail.
+    @State private var errorMessage = ""
+    @State private var showingError = false
     
     var body: some View {
         ScrollView {
@@ -21,9 +24,13 @@ struct CheckoutView: View {
                         .resizable()
                         .scaledToFit()
                 } placeholder: {
+                    
                     ProgressView()
                 }
                 .frame(height: 233)
+                // P15-C1: The check out view in Cupcake Corner uses an image and loading spinner that don’t add anything to the UI, so find a way to make the screenreader not read them out.
+                .accessibilityRemoveTraits(.isImage)
+                
                 
                 Text("Your total cost is \(order.cost, format: .currency(code: "USD"))")
                     .font(.title)
@@ -43,6 +50,11 @@ struct CheckoutView: View {
             Button("OK") { }
         } message: {
             Text(confirmationMessage)
+        }
+        .alert("Uh Oh :(", isPresented: $showingError) {
+            Button("OK") { }
+        } message: {
+            Text(errorMessage)
         }
     }
     
@@ -64,7 +76,9 @@ struct CheckoutView: View {
             confirmationMessage = "Your order for \(decodedOrder.quantity)x \(Order.types[decodedOrder.type].lowercased()) cupcakes is on its way!"
             showingConfirmation = true
         } catch {
-            print("Check out failed: \(error.localizedDescription)")
+//            print("Check out failed: \(error.localizedDescription)")
+            errorMessage = "Sorry, checkout failed. Perhaps check your internet connection. \n\nMessage: \(error.localizedDescription)"
+            showingError = true
         }
         
     }

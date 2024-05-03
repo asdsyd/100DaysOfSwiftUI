@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E0383C52BE554E300CB40D2 /* StringIsEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0383C42BE554E300CB40D2 /* StringIsEmpty.swift */; };
 		4E0ECBA42BD61DE000EAB94E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0ECBA32BD61DE000EAB94E /* DetailView.swift */; };
 		4E64D82F2BD49AD100B1F099 /* BookwormApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E64D82E2BD49AD100B1F099 /* BookwormApp.swift */; };
 		4E64D8312BD49AD100B1F099 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E64D8302BD49AD100B1F099 /* ContentView.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E0383C42BE554E300CB40D2 /* StringIsEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringIsEmpty.swift; sourceTree = "<group>"; };
 		4E0ECBA32BD61DE000EAB94E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		4E64D82B2BD49AD100B1F099 /* Bookworm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookworm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E64D82E2BD49AD100B1F099 /* BookwormApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookwormApp.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			children = (
 				4E64D82E2BD49AD100B1F099 /* BookwormApp.swift */,
 				4ED9589A2BD4E9E2000A6A0B /* AddBookView.swift */,
+				4E0383C42BE554E300CB40D2 /* StringIsEmpty.swift */,
 				4ED9589C2BD56011000A6A0B /* RatingView.swift */,
 				4ED9589E2BD56371000A6A0B /* EmojiRatingView.swift */,
 				4E64D8302BD49AD100B1F099 /* ContentView.swift */,
@@ -152,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E0383C52BE554E300CB40D2 /* StringIsEmpty.swift in Sources */,
 				4E64D8312BD49AD100B1F099 /* ContentView.swift in Sources */,
 				4E64D82F2BD49AD100B1F099 /* BookwormApp.swift in Sources */,
 				4ED958992BD4E94C000A6A0B /* Book.swift in Sources */,

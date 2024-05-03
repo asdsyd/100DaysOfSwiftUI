@@ -22,11 +22,13 @@ struct GridLayout: View {
             {
                 ForEach(missions)
                 { mission in
-                    NavigationLink
+                    // P9-C3: Return to project 8 (Moonshot), and upgrade it to use NavigationLink(value:). This means adding Hashable conformance, and thinking carefully how to use navigationDestination().
+                    NavigationLink(value: mission)
                     {
-                        MissionView(mission: mission, astronauts: astronauts)
-                    } label:
-                    {
+//                    {
+//                        MissionView(mission: mission, astronauts: astronauts)
+//                    } label:
+//                    {
                         VStack
                         {
                             Image(mission.image)
@@ -53,6 +55,9 @@ struct GridLayout: View {
                         .overlay(
                             RoundedRectangle(cornerRadius: 10)
                                 .stroke(.lightBackground))
+                    }
+                    .navigationDestination(for: Mission.self) { mission in
+                    MissionView(mission: mission, astronauts: astronauts)
                     }
                 }
             }

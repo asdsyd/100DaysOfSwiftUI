@@ -14,6 +14,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var processedImage: Image?
     @State private var filterIntensity = 0.5
+    @State private var filterRadius = 0.5
     @State private var selectedItem: PhotosPickerItem?
     @State private var showingFilters = false
     
@@ -45,12 +46,25 @@ struct ContentView: View {
                 
                 HStack {
                     Text("Intensity")
+                        .foregroundStyle(processedImage == nil ? .gray : .black)
                     Slider(value: $filterIntensity)
                         .onChange(of: filterIntensity, applyProcessing)
+                    // P13-C1: Try making the Slider and Change Filter buttons disabled if there is no image selected.
+                        .disabled(processedImage == nil)
+                }
+                
+                // P13-C2: Experiment with having more than one slider, to control each of the input keys you care about. For example, you might have one for radius and one for intensity.
+                HStack {
+                    Text("Radius")
+                        .foregroundStyle(processedImage == nil ? .gray : .black)
+                    Slider(value: $filterRadius)
+                        .onChange(of: filterRadius, applyProcessing)
+                        .disabled(processedImage == nil)
                 }
                 
                 HStack {
                     Button("Change Filter", action: changeFilter)
+                        .disabled(processedImage == nil)
                     
                     Spacer()
                     
@@ -70,6 +84,10 @@ struct ContentView: View {
                 Button("Sepia Tone") { setFilter(CIFilter.sepiaTone() )}
                 Button("Unsharp Mask") { setFilter(CIFilter.unsharpMask() )}
                 Button("Vignette") { setFilter(CIFilter.vignette() )}
+                // P13-C3: Explore the range of available Core Image filters, and add any three of your choosing to the app.
+                Button("Box Blur") { setFilter(CIFilter.boxBlur() )}
+                Button("Bokeh") { setFilter(CIFilter.bokehBlur() )}
+                Button("Motion Blur") { setFilter(CIFilter.motionBlur() )}
                 Button("Cancel", role: .cancel) { }
             }
         }

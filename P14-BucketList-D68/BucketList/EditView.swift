@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// P14-C3: Create another view model, this time for EditView. What you put in the view model is down to you, but I would recommend leaving dismiss and onSave in the view itself – the former uses the environment, which can only be read by the view, and the latter doesn’t really add anything when moved into the model.
 struct EditView: View {
     enum LoadingState {
         case loading, loaded, failed

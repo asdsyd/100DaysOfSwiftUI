@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 @Observable
 class Order: Codable {
     enum CodingKeys: String, CodingKey {
@@ -37,13 +38,39 @@ class Order: Codable {
     var extraFrosting = false
     var addSprinkles = false
     
-    var name = ""
-    var streetAddress = ""
-    var city = ""
-    var zip = ""
+//    var name = ""
+//    var streetAddress = ""
+//    var city = ""
+//    var zip = ""
     
+    // P10-C3: For a more challenging task, try updating the Order class so it saves data such as the user's delivery address to UserDefaults. This takes a little thinking, because @AppStorage won't work here, and you'll find getters and setters cause problems with Codable support. Can you find a middle ground?
+    var name = UserDefaults.standard.string(forKey: "name") ?? "" {
+        didSet {
+            UserDefaults.standard.setValue(name, forKey: "name")
+        }
+    }
+    
+    var streetAddress = UserDefaults.standard.string(forKey: "streetAddress") ?? "" {
+        didSet {
+            UserDefaults.standard.setValue(streetAddress, forKey: "streetAddress")
+        }
+    }
+    
+    var city = UserDefaults.standard.string(forKey: "city") ?? "" {
+        didSet {
+            UserDefaults.standard.setValue(city, forKey: "city")
+        }
+    }
+    
+    var zip = UserDefaults.standard.string(forKey: "zip") ?? "" {
+        didSet {
+            UserDefaults.standard.setValue(zip, forKey: "zip")
+        }
+    }
+    
+    
+    // P10-C1: Our address fields are currently considered valid if they contain anything, even if it’s just only whitespace. Improve the validation to make sure a string of pure whitespace is invalid.
     var hasValidAddress: Bool {
-        //Challenge-1-done
         if name.trimmingCharacters(in: .whitespaces).isEmpty || streetAddress.trimmingCharacters(in: .whitespaces).isEmpty || city.trimmingCharacters(in: .whitespaces).isEmpty || zip.trimmingCharacters(in: .whitespaces).isEmpty {
             return false
         }
