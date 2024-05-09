@@ -7,6 +7,9 @@
 import Observation
 import SwiftUI
 
+// P12-C1: Start by upgrading it to use SwiftData.
+// P12-C2: Add a customizable sort order option: by name or by amount.
+// P12-C3: Add a filter option to show all expenses, just personal expenses, or just business expenses.
 struct ExpenseItem: Identifiable, Codable {
     var id = UUID()
     let name: String
