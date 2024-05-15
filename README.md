@@ -32,7 +32,7 @@ Do star my repo if it's helpful :) Thank you!!
 | Day:47-48                   | [MIlestone-Projects:7-9](/C04-Habitat-D47) : **Habitat** <br><sub> Habit tracking app </sub>                                                                                                                               |                           [𝕏]()                            |   🔶    | <img src="/C04-Habitat-D47/challenge-4.png"/>             |
 | Day:49-52                   | [Project-10](/P10-CupcakeCorner-D49) : **Cupcake Corner** <br><sub> Codable, URLSession, disabled() </sub>                                                                                                                 | [𝕏](https://x.com/asdsydd/status/1787318115866435935)      |   ✅    | <img src="/P10-CupcakeCorner-D49/project-10.png"/>        |
 | Day:53-56                   | [Project-11](/P11-Bookworm-D53) : **Bookworm** <br><sub> Core Data, @Binding, Custom components </sub>                                                                                                                     | [𝕏](https://x.com/asdsydd/status/1787660370980839690)      |   ✅    | <img src="/P11-Bookworm-D53/project-11.png"/>             |
-| Day:57-59                   | [Project-12](/P07-iExpense-D36) : **Swift Data** <br><sub> Swift Data </sub>                                                                                                                                               | [𝕏](https://x.com/asdsydd/status/1790390186872016976)      |   ✅    | <img src="/P07-iExpense-D36/project-12.png"/>             |
+| Day:57-59                   | [Project-12](/P12-SwiftData-D57) : **Swift Data** <br><sub> Swift Data </sub>                                                                                                                                              | [𝕏](https://x.com/asdsydd/status/1790390186872016976)      |   ✅    | <img src="/P12-SwiftData-D57/project-12.png"/>            |
 | Day:60-61                   | [Milestone-Projects:10-12](/C05-NotLinkedIn-D60) : **NotLinkedIn** <br><sub> Collects JSON from internet and displays in the app </sub>                                                                                    |                           [𝕏]()                            |   🔶    | <img src="/C05-NotLinkedIn-D60/challenge-5.png"/>         |
 | Day:62-67                   | [Project-13](/P13-Instafilter-D62) : **Instafilter** <br><sub> UIKit integration, Core Image, Custom bindings, Action Sheets </sub>                                                                                        | [𝕏](https://x.com/asdsydd/status/1790391302754070719)      |   ✅    | <img src="/P13-Instafilter-D62/project-13.png"/>          |
 | Day:68-73                   | [Project-14](/P14-BucketList-D68) : **Bucket List** <br><sub> MapKit, Biometric authntication, Secure data writing, Comparable custom types, Documents directory </sub>                                                    |                           [𝕏]()                            |   ✅    | <img src="/P14-BucketList-D68/project-14.png"/>           |
@@ -43,3 +43,57 @@ Do star my repo if it's helpful :) Thank you!!
 | Day:92-94                   | [Project-18](/P18-LayoutAndGeometry-D92) : **Layout and Geometry** <br><sub> Layout, alignment, geometry, positioning </sub>                                                                                               |                           [𝕏]()                            |   ✅    | <img src="/P18-LayoutAndGeometry-D92/project-18.png"/>    |
 | Day:95                      | [Milestone-Projects:16-18](/C07-SushiRoll-D95) : **SushiRoll** <br><sub> Lets user roll dice and store it's result with growing complexities </sub>                                                                        |                           [𝕏]()                            |   🔶    | <img src="/C07-SushiRoll-D95/challenge-7.png"/>           |
 | Day:96-99                   | [Project-19](/P19-SnowSeeker-D96) : **Snow Seeker** <br><sub> Split view layouts, optional alets, flexible layouts with Group, ListFormatter </sub>                                                                        |                           [𝕏]()                            |   ✅    | <img src="/P19-SnowSeeker-D96/project-19.png"/>           |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
