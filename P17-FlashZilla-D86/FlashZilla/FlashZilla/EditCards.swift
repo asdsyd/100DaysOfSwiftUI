@@ -72,6 +72,9 @@ struct EditCards: View {
         let card = Card(prompt: trimmedPrompt, answer: trimmedAnswer)
         cards.insert(card, at: 0)
         saveData()
+        // P17-C1: When adding a card, the text fields keep their current text. Fix that so that the textfields clear themselves after a card is added.
+        newPrompt = ""
+        newAnswer = ""
     }
     
     func removeCards(at offsets: IndexSet) {

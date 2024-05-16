@@ -7,6 +7,13 @@
 
 import SwiftUI
 
+// P17-C3: For a harder challenge: when the users gets an answer wrong, add that card back into the array so the user can try it again. Doing this successfully means rethinking the ForEach loop, because relying on simple integers isn’t enough – your cards need to be uniquely identifiable.
+
+//Bonus challenges:
+// P17-C4: Make it use an alternative approach to saving data, e.g. documents JSON rather than UserDefaults, or SwiftData – this is generally a good idea, so you should get practice with this.
+
+// P17-C5: Try to find a way to centralize the loading and saving code for the cards. You might need to experiment a little to find something you like!
+
 struct ContentView: View {
     @Environment(\.accessibilityDifferentiateWithoutColor) var accessibilityDifferentiateWithoutColor
     @Environment(\.accessibilityVoiceOverEnabled) var accessibilityVoiceOverEnabled
