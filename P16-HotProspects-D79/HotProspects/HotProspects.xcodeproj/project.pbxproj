@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E286F362BF522210093CC89 /* EditProspectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E286F352BF522210093CC89 /* EditProspectView.swift */; };
 		4EECCE1E2BEB84A500F20A0D /* HotProspectsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EECCE1D2BEB84A500F20A0D /* HotProspectsApp.swift */; };
 		4EECCE202BEB84A500F20A0D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EECCE1F2BEB84A500F20A0D /* ContentView.swift */; };
 		4EECCE222BEB84B400F20A0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EECCE212BEB84B400F20A0D /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E286F352BF522210093CC89 /* EditProspectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProspectView.swift; sourceTree = "<group>"; };
 		4EECCE1A2BEB84A500F20A0D /* HotProspects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotProspects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EECCE1D2BEB84A500F20A0D /* HotProspectsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotProspectsApp.swift; sourceTree = "<group>"; };
 		4EECCE1F2BEB84A500F20A0D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				4EECCE1F2BEB84A500F20A0D /* ContentView.swift */,
 				4EECCE2F2BEBAEE000F20A0D /* Prospect.swift */,
 				4EECCE2B2BEBACB900F20A0D /* ProspectsView.swift */,
+				4E286F352BF522210093CC89 /* EditProspectView.swift */,
 				4EECCE2D2BEBACC700F20A0D /* MeView.swift */,
 				4EECCE212BEB84B400F20A0D /* Assets.xcassets */,
 				4EECCE232BEB84B400F20A0D /* Preview Content */,
@@ -158,6 +161,7 @@
 				4EECCE302BEBAEE000F20A0D /* Prospect.swift in Sources */,
 				4EECCE2C2BEBACB900F20A0D /* ProspectsView.swift in Sources */,
 				4EECCE202BEB84A500F20A0D /* ContentView.swift in Sources */,
+				4E286F362BF522210093CC89 /* EditProspectView.swift in Sources */,
 				4EECCE1E2BEB84A500F20A0D /* HotProspectsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

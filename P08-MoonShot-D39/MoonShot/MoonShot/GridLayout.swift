@@ -60,6 +60,8 @@ struct GridLayout: View {
                     MissionView(mission: mission, astronauts: astronauts)
                     }
                 }
+                .accessibilityLabel("Showing Missions in a Grid format")
+                .accessibilityHint("You can toggle to show missions in a List format.")
             }
             .padding([.horizontal, .bottom])
         }

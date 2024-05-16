@@ -32,13 +32,21 @@ struct ProspectsView: View {
             "Uncontacted people"
         }
     }
+    // P16-C2: Add an editing screen, so users can adjust the name and email address of someone they scanned previously. (Tip: Use the simple form of NavigationLink rather than navigationDestination(), to avoid your list selection code confusing the navigation link.)
     
     var body: some View {
         NavigationStack {
             List(prospects, selection: $selectedProspects) { prospect in
                 VStack(alignment: .leading) {
-                    Text(prospect.name)
-                        .font(.headline)
+                    HStack {
+                        Text(prospect.name)
+                            .font(.headline)
+                        
+                        Spacer()
+                        // P16-C1: Add an icon to the “Everyone” screen showing whether a prospect was contacted or not.
+                        Image(systemName: prospect.isContacted ?  "checkmark.circle.fill" : "xmark.circle.fill")
+                            .foregroundStyle(prospect.isContacted ? .green : .red)
+                    }
                     
                     Text(prospect.emailAddress)
                         .foregroundStyle(.secondary)

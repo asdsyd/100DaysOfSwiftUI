@@ -63,12 +63,13 @@ extension ContentView {
                     if success {
                         self.isUnlocked = true
                     } else {
-                        //error
+                        // P14-C2: Our app silently fails when errors occur during biometric authentication, so add code to show those errors in an alert.
+                        print("Unknown error: \(authenticationError?.localizedDescription ?? "Maybe FaceID does not match")")
                     }
-                    
                 }
             } else {
                 //no biometrics
+                print("Device does not support biometric authentication")
             }
         }
     }

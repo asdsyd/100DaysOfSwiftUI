@@ -9,13 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        Button("John Fitzgerald Kennedy") {
+            print("Button tapped")
         }
-        .padding()
+        .accessibilityInputLabels(["John Fitzgerald Kennedy", "Kennedy", "JFK"])
     }
 }
 
