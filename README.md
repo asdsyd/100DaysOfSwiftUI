@@ -11,7 +11,7 @@ Do star my repo if it's helpful :) Thank you!!
 | Type               |  Number  | Completion |
 |:-------------------|:--------:|:----------:|
 | Projects           | 19 / 19  |    100%    |
-| Challenges         | 41 / 57  |   71.9%    |
+| Challenges         | 51 / 57  |   89.4%    |
 | Milestone Projects | 03 / 06  |   50.0%    |
 
 
